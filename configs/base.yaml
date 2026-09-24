@@ -1,0 +1,12 @@
+project_name: real-time-fraud-gnn
+random_seed: 42
+neighbor_cap: 50
+split:
+  train_end: 0.70
+  validation_end: 0.85
+metrics:
+  fixed_precision: 0.80
+model:
+  name: graphsage
+  hidden_channels: 64
+  layers: 2
